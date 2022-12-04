@@ -23,15 +23,15 @@ const HeaderHome = () => (
           <li>
             <Link to="/service">Services</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/portfolio">Resume</Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/team">Team</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/pricing">Pricing</Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/blog">Blog</Link>
           </li>

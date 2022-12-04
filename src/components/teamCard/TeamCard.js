@@ -1,29 +1,38 @@
 import React from "react";
+import { Card } from "react-bootstrap";
+import {
+  FaTwitter,
+  FaFacebook,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
 
 const TeamCard = ({ obj }) => {
   return (
-    <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
-      <div className="member">
-        <img src={obj.img} alt="" />
-        <h4>{obj.name}</h4>
-        <span>{obj.role}</span>
-        <p>{obj.disc}</p>
-        <div className="social">
-          <a target="_blank" rel="noreferrer" href={obj.twitter}>
-            <i className="bi bi-twitter"></i>
-          </a>
-          <a target="_blank" rel="noreferrer" href={obj.facebook}>
-            <i className="bi bi-facebook"></i>
-          </a>
-          <a target="_blank" rel="noreferrer" href={obj.instagram}>
-            <i className="bi bi-instagram"></i>
-          </a>
-          <a target="_blank" rel="noreferrer" href={obj.linkedin}>
-            <i className="bi bi-linkedin"></i>
-          </a>
-        </div>
-      </div>
-    </div>
+    <Card border="danger" style={{ margin: "10px" }}>
+      <Card.Img variant="top" src={obj.img} height={385} />
+      <Card.Body className="text-center">
+        <Card.Title className="font-monospace fw-bolder">{obj.name}</Card.Title>
+        <Card.Subtitle className="text-muted fw-bolder">
+          {obj.role}
+        </Card.Subtitle>
+        <Card.Text className="fw-normal">{obj.disc}</Card.Text>
+        <Card.Footer>
+          <Card.Link href={obj.twitter}>
+            <FaTwitter />
+          </Card.Link>
+          <Card.Link href={obj.facebook}>
+            <FaFacebook />
+          </Card.Link>
+          <Card.Link href={obj.instagram}>
+            <FaInstagram />
+          </Card.Link>
+          <Card.Link href={obj.linkedin}>
+            <FaLinkedinIn />
+          </Card.Link>
+        </Card.Footer>
+      </Card.Body>
+    </Card>
   );
 };
 

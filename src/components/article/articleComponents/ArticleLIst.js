@@ -1,15 +1,40 @@
 import React from "react";
-import { Card, ButtonGroup, Button } from "react-bootstrap";
+import { ListGroup } from "react-bootstrap";
 
 const ArticleList = () => {
+  const alertClicked = () => {
+    //alert("You clicked the third ListGroupItem");
+  };
   return (
-    <Card style={{ width: "18rem", marginBottom: "20px", marginTop: "10px" }}>
-      <Card.Header>Featured</Card.Header>
-      <ButtonGroup vertical className="bg-dark text-white">
-        <Button variant="light">Button</Button>
-        <Button variant="light ">Button</Button>
-      </ButtonGroup>
-    </Card>
+    <ListGroup className="text-center font-monospace fw-bolder">
+      <ListGroup.Item action onClick={alertClicked}>
+        Link 1
+      </ListGroup.Item>
+      <ListGroup.Item action href="#link2">
+        Link 2
+      </ListGroup.Item>
+      <ListGroup.Item action href="#link1">
+        Link 3
+      </ListGroup.Item>
+      <ListGroup.Item action href="#link3">
+        Link 2
+      </ListGroup.Item>
+      <ListGroup.Item action href="#link4">
+        Link 3
+      </ListGroup.Item>
+      <ListGroup.Item action href="#link5">
+        Link 2
+      </ListGroup.Item>
+      <ListGroup.Item action href="#link6">
+        Link 3
+      </ListGroup.Item>
+      <ListGroup.Item action href="#link7">
+        Link 2
+      </ListGroup.Item>
+      <ListGroup.Item action href="#link8">
+        Link 3
+      </ListGroup.Item>
+    </ListGroup>
   );
 };
 

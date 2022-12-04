@@ -1,11 +1,17 @@
 import React from "react";
+import {
+  TWITTER_URL,
+  FACEBOOK_URL,
+  LINKEDIN_URL,
+  INSTAGRAM_URL,
+} from "../../constrains/Constant";
 
 const TopBar = () => (
   <section id="topbar" className="d-flex align-items-center">
     <div className="container d-flex justify-content-center justify-content-md-between">
       <div className="contact-info d-flex align-items-center">
         <i className="bi bi-envelope d-flex align-items-center">
-          <a href="mailto:contact@example.com">
+          <a href="mailto:saurabhprajapati@gmail.com">
             saurabhprajapati120.@gmail.com
           </a>
         </i>
@@ -14,16 +20,16 @@ const TopBar = () => (
         </i>
       </div>
       <div className="social-links d-none d-md-flex align-items-center">
-        <a href="1" className="twitter">
+        <a href={TWITTER_URL} className="twitter">
           <i className="bi bi-twitter"></i>
         </a>
-        <a href="2" className="facebook">
+        <a href={FACEBOOK_URL} className="facebook">
           <i className="bi bi-facebook"></i>
         </a>
-        <a href="3" className="instagram">
+        <a href={INSTAGRAM_URL} className="instagram">
           <i className="bi bi-instagram"></i>
         </a>
-        <a href="4" className="linkedin">
+        <a href={LINKEDIN_URL} className="linkedin">
           <i className="bi bi-linkedin"></i>
         </a>
       </div>

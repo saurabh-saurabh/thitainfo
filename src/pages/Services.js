@@ -1,5 +1,5 @@
 import React from "react";
-
+import { ProgressBar } from "react-bootstrap";
 import ServicesSection from "../components/services/ServicesSection";
 
 const Services = () => (
@@ -34,61 +34,31 @@ const Services = () => (
             <div className="skills-content">
               <div className="progress">
                 <span className="skill">
-                  HTML <i className="val">100%</i>
+                  JAVA, C# <i className="val">90%</i>
                 </span>
-                <div className="progress-bar-wrap">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="100"
-                    aria-valuemin="90"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
+                <ProgressBar animated now={90}></ProgressBar>
               </div>
 
               <div className="progress">
                 <span className="skill">
-                  CSS <i className="val">90%</i>
+                  SPRING BOOT, C# MVC <i className="val">90%</i>
                 </span>
-                <div className="progress-bar-wrap">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="90"
-                    aria-valuemin="90"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
+                <ProgressBar animated now={90}></ProgressBar>
               </div>
 
               <div className="progress">
                 <span className="skill">
-                  JavaScript <i className="val">75%</i>
+                  REACT JS, JAVA SCRIPT, HTML, CSS <i className="val">75%</i>
                 </span>
-                <div className="progress-bar-wrap">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="75"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
+                <ProgressBar animated now={75}></ProgressBar>
               </div>
 
               <div className="progress">
                 <span className="skill">
-                  Photoshop <i className="val">55%</i>
+                  MySQL, Apache Cassandra <i className="val">55%</i>
                 </span>
-                <div className="progress-bar-wrap">
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="55"
-                    aria-valuemin="85"
-                    aria-valuemax="100"
-                  ></div>
+                <div className="progress">
+                  <ProgressBar animated now={55}></ProgressBar>
                 </div>
               </div>
             </div>

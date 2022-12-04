@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
   return (
@@ -11,7 +12,7 @@ const ServicesSection = () => {
                 <i className="bx bxl-dribbble"></i>
               </div>
               <h4>
-                <a href="2">Website design</a>
+                <Link to="/products">Website design</Link>
               </h4>
               <p>
                 Interact with your customers with a great looking website that
@@ -28,7 +29,7 @@ const ServicesSection = () => {
                 <i className="bx bx-file"></i>
               </div>
               <h4>
-                <a href="3">Mobile App Development</a>
+                <Link to="/products">Mobile App Development</Link>
               </h4>
               <p>
                 We are developing mobile experiences that serve the unique needs
@@ -44,7 +45,7 @@ const ServicesSection = () => {
                 <i className="bx bx-tachometer"></i>
               </div>
               <h4>
-                <a href="1">Software Development</a>
+                <Link to="/products">Software Development</Link>
               </h4>
               <p>
                 Our custom <strong>software development services</strong> to
@@ -61,7 +62,7 @@ const ServicesSection = () => {
                 <i className="bx bx-world"></i>
               </div>
               <h4>
-                <a href="2">Social Media Marketing</a>
+                <Link to="/products">Social Media Marketing</Link>
               </h4>
               <p>
                 By using the power of social media interact with your customers
@@ -77,7 +78,7 @@ const ServicesSection = () => {
                 <i className="bx bx-slideshow"></i>
               </div>
               <h4>
-                <a href="3">Digital Marketing</a>
+                <Link to="/products">Digital Marketing</Link>
               </h4>
               <p>
                 We provide our clients with a strong creative{" "}
@@ -93,7 +94,7 @@ const ServicesSection = () => {
                 <i className="bx bx-arch"></i>
               </div>
               <h4>
-                <a href="32">Graphics & Design</a>
+                <Link to="/products">Graphics & Design</Link>
               </h4>
               <p>
                 Comming soon ... Modi nostrum vel laborum. Porro fugit error sit

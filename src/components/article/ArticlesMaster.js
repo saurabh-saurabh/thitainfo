@@ -3,12 +3,11 @@ import React from "react";
 // Articles
 import ArticleList from "./articleComponents/ArticleLIst";
 import Articles from "./articleComponents/Articles";
-import InnerArticlesList from "./articleComponents/InnerArticlesList";
 
 // React Boostrap
 import { Container, Row, Col } from "react-bootstrap";
 
-const JavaArticles = () => {
+const ArticlesMaster = () => {
   return (
     <Container fluid>
       <Row>
@@ -23,4 +22,4 @@ const JavaArticles = () => {
   );
 };
 
-export default JavaArticles;
+export default ArticlesMaster;

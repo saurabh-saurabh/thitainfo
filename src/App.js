@@ -11,13 +11,11 @@ import Pricing from "./pages/Pricing";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import PageNotFound from "./pages/PageNotFound";
+import CommingSoon from "./components/products/CommingSoon";
 import Template1 from "./components/resume/Template1";
 
 // Articles
-import JavaArticles from "./components/article/JavaArticles";
-
-// Code Section
-import Python100Que from "./components/code/Python100Que";
+import ArticlesMaster from "./components/article/ArticlesMaster";
 
 const App = () => {
   return (
@@ -32,8 +30,9 @@ const App = () => {
         <Route exact path="/pricing" component={Pricing} />
         <Route exact path="/blog" component={Blog} />
         <Route exact path="/contact" component={Contact} />
-        <Route exact path="/javaArticle" component={JavaArticles} />
-        <Route exact path="/python100" component={Python100Que} />
+        <Route exact path="/products" component={CommingSoon} />
+        <Route exact path="/javaArticle" component={ArticlesMaster} />
+        <Route exact path="/python100" component={ArticlesMaster} />
         <Route exact path="/portfolio/:teamplateName" component={Template1} />
         <Route path="*" component={PageNotFound} />
       </Switch>

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-
 import TeamCard from "../components/teamCard/TeamCard";
-
+import { CardGroup, Container } from "react-bootstrap";
 const Team = () => {
   const TeamInfo = [
     {
@@ -55,13 +54,13 @@ const Team = () => {
       </section>
 
       <section id="team" className="team">
-        <div className="container">
-          <div className="row">
+        <Container>
+          <CardGroup>
             {team.map((obj) => (
               <TeamCard obj={obj} />
             ))}
-          </div>
-        </div>
+          </CardGroup>
+        </Container>
       </section>
     </main>
   );

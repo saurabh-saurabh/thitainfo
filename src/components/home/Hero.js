@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -32,15 +33,15 @@ const Hero = () => {
                     contact your target audience
                   </p>
                   <h5>
-                    <h3> We specialize in:</h3> <br /> Web Design / Mobile
-                    Application Developmen / ERP Application
+                    We specialize in: <br /> Web Design / Mobile Application
+                    Developmen / ERP Application
                   </h5>
-                  <a
-                    href="1"
+                  <Link
                     className="btn-get-started animate__animated animate__fadeInUp"
+                    to={"/service"}
                   >
                     Read More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
