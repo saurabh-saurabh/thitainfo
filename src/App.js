@@ -31,7 +31,7 @@ const App = () => {
         <Route exact path="/blog" component={Blog} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/products" component={CommingSoon} />
-        <Route exact path="/javaArticle" component={ArticlesMaster} />
+        <Route exact path="/Articles" component={ArticlesMaster} />
         <Route exact path="/python100" component={ArticlesMaster} />
         <Route exact path="/portfolio/:teamplateName" component={Template1} />
         <Route path="*" component={PageNotFound} />

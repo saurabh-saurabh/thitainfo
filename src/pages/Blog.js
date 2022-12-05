@@ -28,7 +28,7 @@ const Blog = () => (
               </div>
 
               <h2 className="entry-title">
-                <a href="blog-single.html">Science City Ahmedabad</a>
+                <a href="#blog-single.html">Science City Ahmedabad</a>
               </h2>
 
               <div className="entry-meta">

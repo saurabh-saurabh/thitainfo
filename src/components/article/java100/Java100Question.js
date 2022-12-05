@@ -6,7 +6,7 @@ import { Card } from "react-bootstrap";
 const Java100Question = ({ code }) => {
   return (
     <Card id={code.id} style={{ margin: "10px" }} key={code.id}>
-      <Card.Header>{code.question}</Card.Header>
+      <Card.Header className="fw-bold">Question: {code.question}</Card.Header>
       <Card.Body>
         <Card.Text>
           <SyntaxHighlighter language={code.language} style={a11yLight}>
@@ -14,7 +14,7 @@ const Java100Question = ({ code }) => {
           </SyntaxHighlighter>
         </Card.Text>
       </Card.Body>
-      <Card.Footer className="text-muted">{code.output}</Card.Footer>
+      <Card.Footer className="text-muted">Output: {code.output}</Card.Footer>
     </Card>
   );
 };

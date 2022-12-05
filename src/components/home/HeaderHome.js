@@ -35,7 +35,10 @@ const HeaderHome = () => (
           <li>
             <Link to="/blog">Blog</Link>
           </li>
-          <li className="dropdown">
+          <li>
+            <Link to="/Articles">Interview Preparation</Link>
+          </li>
+          {/* <li className="dropdown">
             <a href="/javaArticle">
               <span>Interview Preparation</span>{" "}
               <i className="bi bi-chevron-down"></i>
@@ -49,8 +52,7 @@ const HeaderHome = () => (
                 <Link to="/python100">100 Python Interview Question</Link>
               </li>
             </ul>
-          </li>
-          <li></li>
+          </li> */}
         </ul>
         <i className="bi bi-list mobile-nav-toggle"></i>
       </nav>
