@@ -1,40 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
-  TWITTER_URL,
-  FACEBOOK_URL,
-  LINKEDIN_URL,
-  INSTAGRAM_URL,
-} from "../../constrains/Constant";
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  Button,
+} from "reactstrap";
 
-const TopBar = () => (
-  <section id="topbar" className="d-flex align-items-center">
-    <div className="container d-flex justify-content-center justify-content-md-between">
-      <div className="contact-info d-flex align-items-center">
-        <i className="bi bi-envelope d-flex align-items-center">
-          <a href="mailto:saurabhprajapati@gmail.com">
-            saurabhprajapati120.@gmail.com
-          </a>
-        </i>
-        <i className="bi bi-phone d-flex align-items-center ms-4">
-          <span>+91 81402 42047</span>
-        </i>
-      </div>
-      <div className="social-links d-none d-md-flex align-items-center">
-        <a href={TWITTER_URL} className="twitter">
-          <i className="bi bi-twitter"></i>
-        </a>
-        <a href={FACEBOOK_URL} className="facebook">
-          <i className="bi bi-facebook"></i>
-        </a>
-        <a href={INSTAGRAM_URL} className="instagram">
-          <i className="bi bi-instagram"></i>
-        </a>
-        <a href={LINKEDIN_URL} className="linkedin">
-          <i className="bi bi-linkedin"></i>
-        </a>
-      </div>
+const TopBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
+  return (
+    <div className="bg-light">
+      <Navbar expand="md">
+        <NavbarBrand className="fw-bold" tag={Link} to="/">
+          THITA INFO
+        </NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="me-auto" navbar>
+            <NavItem>
+              <NavLink tag={Link} to="/Articles">
+                Articles
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink tag={Link} to="/blog">
+                Blogs
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <Nav>
+            <NavItem className="pe-2">
+              <Button outline>Login</Button>
+            </NavItem>
+            <NavItem>
+              <Button color="success" outline>
+                Login
+              </Button>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
     </div>
-  </section>
-);
+  );
+};
 
 export default TopBar;

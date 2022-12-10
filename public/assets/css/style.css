@@ -1,37 +1,13 @@
-/**
-* Template Name: Eterna - v4.7.0
-* Template URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Code
---------------------------------------------------------------*/
-
-.deco {
-  line-height: 140%;
-  margin: 50px;
-  width: 650px;
-}
-
-code {
-  font-size: 120%;
-}
-
-pre code {
-  background-color: #eee;
-  border: 1px solid #999;
-  display: block;
-  padding: 20px;
-}
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+}
+
+.text-white-sp {
+  color: white !important;
 }
 
 a {
@@ -286,9 +262,9 @@ h6 {
     display: block;
   }
 
-  .navbar ul {
+  /* .navbar ul {
     display: none;
-  }
+  } */
 }
 .navbar-mobile {
   position: fixed;

@@ -1,15 +1,27 @@
 import React from "react";
-import { ListGroup } from "react-bootstrap";
+import { ListGroup, ListGroupItem } from "reactstrap";
 
 const ArticleList = () => {
   const alertClicked = () => {
     //alert("You clicked the third ListGroupItem");
   };
   return (
-    <ListGroup className="text-center font-monospace fw-bolder">
-      <ListGroup.Item action onClick={alertClicked}>
-        Java 100 Interview Question !!!
-      </ListGroup.Item>
+    <ListGroup flush>
+      <ListGroupItem href="#" tag="a">
+        Cras justo odio
+      </ListGroupItem>
+      <ListGroupItem href="#" tag="a">
+        Dapibus ac facilisis in
+      </ListGroupItem>
+      <ListGroupItem href="#" tag="a">
+        Morbi leo risus
+      </ListGroupItem>
+      <ListGroupItem href="#" tag="a">
+        Porta ac consectetur ac
+      </ListGroupItem>
+      <ListGroupItem href="#" tag="a">
+        Vestibulum at eros
+      </ListGroupItem>
     </ListGroup>
   );
 };

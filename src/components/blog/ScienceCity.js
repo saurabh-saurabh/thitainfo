@@ -1,5 +1,5 @@
 import React from "react";
-
+import { LINKEDIN_URL } from "../../constrains/Constant";
 const ScienceCity = () => {
   return (
     <article id="sciencecity" className="entry">
@@ -14,18 +14,20 @@ const ScienceCity = () => {
       <div className="entry-meta">
         <ul>
           <li className="d-flex align-items-center">
-            <i className="bi bi-person"></i>{" "}
-            <a href="blog-single.html">Saurabh Prajapati</a>
+            <i className="bi bi-person"></i>
+            <a href={LINKEDIN_URL} target="_blank">
+              Saurabh Prajapati
+            </a>
           </li>
           <li className="d-flex align-items-center">
-            <i className="bi bi-clock"></i>{" "}
-            <a href="blog-single.html">
+            <i className="bi bi-clock"></i>
+            <a href="#date">
               <time datetime="2020-01-01">Jan 1, 2020</time>
             </a>
           </li>
           <li className="d-flex align-items-center">
-            <i className="bi bi-chat-dots"></i>{" "}
-            <a href="https://goo.gl/maps/AGNx1qK3wv8ebbgSA">Location</a>
+            <i className="bi bi-chat-dots"></i>
+            <a href="#Location">Ahmedabad</a>
           </li>
         </ul>
       </div>
@@ -39,7 +41,10 @@ const ScienceCity = () => {
           park; as well as other facilities.
         </p>
         <div className="read-more">
-          <a href="https://en.wikipedia.org/wiki/Gujarat_Science_City">
+          <a
+            href="https://en.wikipedia.org/wiki/Gujarat_Science_City"
+            target="_blank"
+          >
             Read More
           </a>
         </div>

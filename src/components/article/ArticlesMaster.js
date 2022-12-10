@@ -6,6 +6,7 @@ import Articles from "./articleComponents/Articles";
 
 // React Boostrap
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const ArticlesMaster = () => {
   return (
